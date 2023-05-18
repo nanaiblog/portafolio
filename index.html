@@ -9,13 +9,28 @@
     table tr{
         border: solid 1px black;
     }
+    div input{
+        margin: 5px;
+    }
+    .inputs{
+        width: 15%;}
+
+    #portrait{
+        height: 10em;
+        padding: 20px;
+    }
+    #misredes img{
+        width: 30px;
+    }
+
 </style>
 
 </head>
 <body>
     <h1>Elisabeth Smith</h1>
-        <img src="fotoportafolio.png" alt="foto de portafolio">
-            <nav id="mis redes"> 
+        <img id="portrait" src="fotoportafolio.png" alt="foto de portafolio">
+           
+        <nav id="misredes"> 
                 <img src="icono_github.png" alt="icono de github">
                 <a href="https://github.com/nanaiblog">my github</a>
                 <img src="icono_linkedin.png" alt="icono de linkedin">
@@ -23,14 +38,15 @@
                 <img src="icono_mail.png" alt="icono de correo electrónico">
                 <a href="esmithbecker@gmail.com">my email</a>
             </nav>
+
     <h2>Technologies</h2>
         <table>
             <tr>
-                <th>Front-End</hd>
-                <th>Python</hd>
-                <th>Javascript</hd>
-                <th>Database</hd>
-                <th>Concepts</hd>
+                <th>Front-End</th>
+                <th>Python</th>
+                <th>Javascript</th>
+                <th>Database</th>
+                <th>Concepts</th>
             </tr>
             <tr>
                 <td>HTML5</td>
@@ -54,5 +70,26 @@
                 <td>Rest</td>
             </tr>
         </table>
+
+    <h3>Project: Social Snakes</h3>
+    
+    <img src="snek.png" alt="snek" height="128"><!-- no me acepto px en el validador-->
+    
+    <p>Social Networking in Python <a href="#">deployed</a> | <a href="#">code</a></p>
+    
+    <h3>Contact Me</h3>
+        <form id="form">
+            <div>
+                <label for="name">Name:</label>
+                <input class="inputs" id="name" type="text" name="name">
+                <label for="email">Email:</label>
+                <input class="inputs" id="email" type="text" name="email">
+            </div>
+            <div>
+                <label for="mensaje">Message:</label>
+                <textarea id="mensaje" name="message" cols="30" rows="4"></textarea>
+            </div>
+            <input type="submit" value="Send Message">
+        </form>        
 </body>
 </html>
